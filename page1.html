@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="page-1" content="width=device-width, inital-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css"type="text/css">
+    <link rel="stylesheet" href="css/nav.css" type="text/css">
+    <script type="module" src="/java/java.js"></script>
+    <title>page-1</title>
+</head>
+<!--nav bar works well no black box on page 1-->
+<body>
+<div class="nav.page1">
+    <nav>
+        <ul>
+            <img src="Images/NZlogo1.jpg" alt="NZ logo"   width="200" height="150">
+                <br>
+                <li><a href="page2.html"> Image and Text </a></li>
+                <li><a href="page3.html"> Parallax </a></li>
+                <li><a href="page4.html"> Video </a></li>
+                <li><a href="page5.html"> Images </a></li>
+                <li><a href="page6.html"> Other country </a></li>
+                <li><a href="page7.html"> Hobbies </a></li>
+                <li><a href="page8.html"> About </a></li>
+        </ul>
+    </nav>
+</div>
+<br>
+<!--this div class is the background intro video it uses Java to get the text to fade out after 10 seconds -->
+<div class="video">
+    <video autoplay loop muted plays-inline class="pos">
+        <source src="Videos/intro.webm" type="video/webm"> 
+    </video>
+    <div class="center" style="height: 1000px;">
+        <h1 id="fade"> New Zealand<br>Aotearoa</h1>
+        <script src="java/java.js"></script>
+    </div>
+</div>
+<!--parerllax image in the back ground contains the text with basic div-->
+<div class="bgimg-10">
+    <div class="center" style="width: 60%;">
+        <div class="words">
+                <p>
+                    New Zealand, an island nation nestled in the southwestern Pacific Ocean, is celebrated for its extraordinary and varied landscapes that captivate visitors with their sheer beauty and diversity. 
+                    The country is divided into two main islands: the North Island, known for its vibrant urban centers such as Auckland and Wellington, and the South Island, famed for its dramatic natural wonders. 
+                    The North Island features lush rainforests, geothermal hotspots like Rotorua, and the stunning beaches of the Bay of Islands.                         Its cities offer a blend of modern culture and rich Maori heritage, providing a dynamic and engaging experience for travelers. 
+                    In contrast, the South Island boasts some of the worlds most breathtaking scenery, including the snow-capped peaks of the Southern Alps, the tranquil waters of Lake Tekapo, and the awe-inspiring fjords of Milford Sound. 
+                    The island's rugged terrain is a playground for outdoor enthusiasts, with opportunities for skiing, hiking, and exploring pristine wilderness areas. 
+                    New Zealands unique flora and fauna, such as the kiwi bird and the ancient kauri trees, further enhance its allure. 
+                    The countrys warm and welcoming people, combined with its rich Maori culture and a strong emphasis on environmental conservation, make New Zealand not just a destination but a remarkable experience that lingers long after visitors depart.
+                    <br>
+               </p>
+        </div>
+    </div>
+<!--uses a wierd sudo felx box system, didnt know how to use Flex box when I did page 1 -->
+<!--the row colum systems main benifit is it automaticly reajust the text to stay on screen usfull for newspaper type text-->
+    <div class="center">
+        <div class="row">
+            <div class="column">
+                <div class="words">
+                <p> New Zealand is a premier tourist destination, attracting visitors from around the world with its diverse range of attractions and activities. 
+                    From the vibrant cities of Auckland and Wellington to the serene beauty of its natural landscapes, the country offers something for everyone. 
+                    Adventure enthusiasts flock to the South Island for thrilling experiences like skiing in Queenstown, hiking the iconic Routeburn Track, 
+                    or exploring the otherworldly fjords of Milford Sound. Meanwhile, the North Island entices with its geothermal marvels in Rotorua, 
+                    the picturesque beaches of the Bay of Islands, and the cultural richness of Māori heritage. 
+                    Whether its the chance to witness the awe-inspiring glowworm caves, indulge in world-class wine tours, or simply enjoy the warm hospitality of the locals, 
+                    New Zealand provides a memorable and enriching travel experience that showcases the best of nature and culture.
+                    <br>
+                    <br>
+                    <!--uses googles API to put interactive map on screen simpile in its design. the SRC is my personal API key plz dont steal-->
+                    <!--Map uses Java script to display and mind API. defer means the map will load last as to not stop page from loading-->
+                    <gmp-map
+                    center="-41.04675138585476, 174.94269838045"
+                    zoom="4"
+                    map-id="New Zealand Map"
+                    style="height: 600px; width: 700px; ">
+                    </gmp-map>
+                        <script
+                            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCVewepunhvPV8A0Nfj_PGwqW6rF2k-_Hc&loading=async&libraries=maps,marker&v=beta" 
+                            defer>
+                        </script>
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer. very basic -->
+    <div class="footer">
+        <p>New Zeland Travel agency<br>
+        For More information <br>
+        exampleemail@email.com <br>
+        ph: 021 123 456
+        </p>
+    </div>
+</div>
+</body>
+</html>

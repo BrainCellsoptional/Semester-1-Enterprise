@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="page-1" content="width=device-width, inital-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css"type="text/css">
+    <link rel="stylesheet" href="css/nav.css" type="text/css">
+    <title>page-3</title>
+</head>
+<body>
+<div class="nav" >
+    <nav>
+        <ul>
+            <img src="Images/NZlogo1.jpg" width="200" height="150">
+                <br>
+                <li><a href="page1.html"> Home Page </a></li>
+                <li><a href="page2.html"> Image and text </a></li>
+                <li><a href="page4.html"> Video </a></li>
+                <li><a href="page5.html"> Images </a></li>
+                <li><a href="page6.html"> Other country </a></li>
+                <li><a href="page7.html"> Hobbies </a></li>
+                <li><a href="page8.html"> About </a></li>
+        </ul>
+    </nav>
+</div>
+<!--parellax background image-->
+<div 
+    class="bgimg-1"style="height: 1200px;">
+    <div class="center">
+        <h1>Aotearoa</h1>
+    </div>
+</div>
+<!--this is how I do the angled boxs-->
+<!--the parbox rotates the black box and then the flatten undoes this so the text is horizontal-->
+<!--the conatiner is the same as in page 2 but this time the image drops bellow as the width isnt large enough to go to the side-->
+<div class="parbox">
+    <div class="flatten">
+        <div class="container">
+            <div>
+                <p>New Zealand is renowned for its vibrant and diverse culture, shaped by its rich Maori heritage and a blend of influences from its European, 
+                Pacific, and Asian communities. The country celebrates a unique cultural tapestry through its traditional haka performances, 
+                contemporary arts, and a strong emphasis on community and environmental sustainability. Known for its breathtaking landscapes and commitment to preserving its natural beauty, 
+                New Zealand is also famous for being the first country to welcome the new day. Due to its location just west of the International Date Line, 
+                New Zealand's East Coast, particularly the city of Gisborne, is among the first places on Earth to experience the sunrise, 
+                symbolizing a fresh start each day for the world.
+                <br>
+                <br>
+                Building on this rich cultural and geographic heritage, New Zealand continues to be a beacon of innovation and resilience. 
+                Its diverse population fosters a dynamic society where traditional values coexist with modern advancements. 
+                This unique blend is evident in New Zealand’s thriving cultural festivals, culinary diversity, and progressive environmental policies. 
+                The country’s commitment to sustainability is reflected in its ambitious efforts to combat climate change and protect its pristine landscapes. 
+                Moreover, New Zealand’s pioneering spirit is not only a symbol of a new day but also a testament to its forward-thinking approach in technology and education. 
+                As a global leader in renewable energy and eco-friendly practices, New Zealand exemplifies how a nation can honor its traditions while embracing a sustainable and innovative future.</p>
+                <img src="Images/face.jpg" height="240" width="240" class="round">
+            </div>
+        </div>
+    </div>
+</div>
+<!--background parerllax image format-->
+<div 
+class="bgimg-2">
+</div>
+<!--same parbox setup but this one uses a 50% width so the text spreads out and looks normal-->
+<!--container has style to ajust gap and flex wrap otherwise the image would drop below as its techniclly outside the container -->
+<div class="parbox">
+    <div class="flatten" style="width: 50%;">
+        <div class="container" style="width: 100%; gap: 50px 150px; flex-wrap: nowrap;">
+            <div>
+                </p>New Zealand’s tourism industry is a vital component of its economy, drawing millions of visitors each year who come to experience its stunning landscapes and rich cultural heritage. 
+                In 2019, prior to the global pandemic, New Zealand welcomed approximately 3.9 million international tourists. This influx of visitors contributed significantly to the nation's economy, 
+                with tourism generating over NZD 40 billion in revenue, supporting local businesses, and creating numerous job opportunities. The industry is renowned for its diverse offerings, 
+                from the adventure tourism of Queenstown and the geothermal wonders of Rotorua to the picturesque beauty of Fiordland and the vibrant cultural experiences in Auckland and Wellington.
+                <br>
+                <br>
+                Among the most popular destinations, Queenstown stands out for its array of adrenaline-pumping activities, including bungee jumping, skydiving, and skiing. 
+                Rotorua attracts visitors with its geothermal attractions and Maori cultural experiences, while the picturesque landscapes of Fiordland National Park, 
+                including the iconic Milford Sound, offer breathtaking natural beauty. Additionally, the vibrant cities of Auckland and Wellington provide a rich mix of urban experiences, 
+                including world-class dining, arts, and cultural events. 
+                These destinations not only highlight New Zealand's diverse tourism appeal but also demonstrate its capacity to attract travelers seeking both adventure and relaxation.</p></div>
+                <div><img src="Images/turists.jpg" height="340" width="440">
+            </div>
+        </div>
+    </div>
+</div>
+<!--Text with background image of clouds couldnt get it to be parellaxed i have a theroy as to how but would need to re write alot of the code-->
+<div 
+class="bgimg-3">
+</div>
+<div class="center">
+    <div class="text_with_image">
+        THE LAND OF THE LONG WHITE CLOUD
+    </div>
+</div>
+<!--this is the three slit parrellaxed iamge, i used style to ajust gap and width to save on css code-->
+<!--the parbox2 to is a black box rotated -2deg and brought to the front useing z-index and a flex box to postions the 5 divs in a row-->
+<!--the 3 images are set to 32% so you can only see a part of them, the black boxs cover the corners so it looks like the merge into each other-->
+<div class="box">
+    <div class="container" style="gap: 0px 0px; width: 100%;">
+        <div 
+            class="bgimg-6">
+        </div>
+        <div class="parbox2"></div>
+        <div 
+            class="bgimg-7">
+        </div>
+        <div class="parbox2"></div>
+        <div 
+            class="bgimg-8">
+        </div>
+    </div>
+</div>
+<!--another parerllax and container set but with a video imbeded instead of text, did this juist to see if it would work-->
+<div 
+class="bgimg-4">
+</div>
+<div class="parbox">
+    <div class="flatten">
+        <div>
+            <video autoplay muted loop play-inline class="video-con">
+              <source src="Videos/haka.webm" type="video/webm"/>
+            </video>
+            <h3>The Legendary NZ Haka <br>Performed by the All</h3>
+          </div>
+    </div>
+</div>
+<div 
+class="bgimg-5">
+<!--I know you dont trust me but its another footer-->
+<div class="footer">
+    <p>New Zeland Travel agency<br>
+    For More information <br>
+    exampleemail@email.com <br>
+    ph: 021 123 456
+    </p>
+</div>
+</div>
+
+</body>
+</html>
+    
+

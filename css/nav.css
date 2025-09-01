@@ -1,0 +1,44 @@
+/*asigned atrabutes to nav bar
+size color font*/
+.nav {
+    display: block;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5) ;
+}
+/*sets page 1 size to 90% width*/
+nav.pag1 {
+    display: block;
+    width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/*aligns text in navbar to be centered with some padding*/
+nav ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: auto;
+}
+/*spaces links apart so they dont move when highlighted
+sets text to be inline in a row*/
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    margin:auto;
+    width: 200px;
+}
+/*sets text color 
+sets font size*/
+nav li a {
+    color: #fff;
+    font-size: 15px;
+}
+/*when mouse over link make bold and slightly bigger*/
+nav a:hover {
+    font-weight: bold;
+    font-size: 16px;
+}
+
